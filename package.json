@@ -29,6 +29,8 @@
     "build": "esno scripts/build.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
+    "test-build": "npm run build && vitest --mode test-build",
+    "test-build:ui": "npm run build && vitest --mode test-build --ui",
     "lint": "eslint ./src --fix"
   },
   "peerDependencies": {
