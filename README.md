@@ -23,12 +23,12 @@ export default defineConfig({
 ```
 
 ```html
-  <div class="size-auto" />
-  <div class="size-full" />
-  <div class="size-1/2" />
-  <div class="size-xs" />
-  <div class="size-1" />
-  <div class="size-[1px]" />
+<div class="size-auto" />
+<div class="size-full" />
+<div class="size-1/2" />
+<div class="size-xs" />
+<div class="size-1" />
+<div class="size-[1px]" />
 ```
 
 这将生成以下 css 代码
