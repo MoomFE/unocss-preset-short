@@ -1,0 +1,21 @@
+// Vitest Snapshot v1
+
+exports[`size > autocomplete 1`] = `
+[
+  "size-2xl",
+  "size-3xl",
+  "size-4xl",
+  "size-5xl",
+  "size-6xl",
+  "size-7xl",
+  "size-auto",
+  "size-lg",
+  "size-md",
+  "size-none",
+  "size-prose",
+  "size-screen",
+  "size-sm",
+  "size-xl",
+  "size-xs",
+]
+`;
