@@ -1,9 +1,12 @@
 import { type Rule } from 'unocss';
 import { handler } from '@unocss/preset-mini/utils';
-import { camelCase } from 'lodash-es';
 
 type WidthProps = 'width' | 'maxWidth' | 'minWidth';
 type HeightProps = 'height' | 'maxHeight' | 'minHeight';
+
+function camelCase(str: string) {
+  return str.replace(/-([a-z])/g, (_, v) => v.toUpperCase());
+}
 
 /**
  * 同时定义宽高

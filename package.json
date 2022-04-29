@@ -37,7 +37,6 @@
   "devDependencies": {
     "@moomfe/eslint-config": "^2.0.6",
     "@types/fs-extra": "^9.0.13",
-    "@types/lodash-es": "^4.17.6",
     "@types/node": "^17.0.26",
     "@types/postcss-js": "^4.0.0",
     "@unocss/autocomplete": "^0.32.1",
@@ -45,7 +44,6 @@
     "eslint": "^8.14.0",
     "esno": "^0.14.1",
     "fs-extra": "^10.1.0",
-    "lodash-es": "^4.17.21",
     "postcss": "^8.4.12",
     "postcss-js": "^4.0.0",
     "rollup": "^2.70.2",
