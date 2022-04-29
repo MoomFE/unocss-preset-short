@@ -46,12 +46,19 @@ describe('size', () => {
 
   test('固定宽高', async() => {
     const { css } = await generator.generate(
-      ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl'].map(s => `size-${s}`).join(' '),
+      [
+        '1', '2', '3', '666',
+        'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl',
+      ].map(s => `size-${s}`).join(' '),
     );
 
     expect(
       postcssJs.objectify(postcss.parse(css)),
     ).toEqual({
+      '.size-1': { width: '0.25rem', height: '0.25rem' },
+      '.size-2': { width: '0.5rem', height: '0.5rem' },
+      '.size-3': { width: '0.75rem', height: '0.75rem' },
+      '.size-666': { width: '166.5rem', height: '166.5rem' },
       '.size-xs': { width: '20rem', height: '20rem' },
       '.size-sm': { width: '24rem', height: '24rem' },
       '.size-md': { width: '28rem', height: '28rem' },
