@@ -14,26 +14,26 @@ function camelCase(str: string) {
 export const sizeRules: Rule[] = [[
   /^(min-|max-)?size-(.+)$/,
   ([, minmax, prop], { theme }) => {
-    const widthStr = camelCase(`${minmax || ''}width`) as WidthProps;
-    const heightStr = camelCase(`${minmax || ''}height`) as HeightProps;
+    const widthProperty = `${minmax || ''}width`;
+    const heightProperty = `${minmax || ''}height`;
 
     // @ts-expect-error ???
-    const width = theme[widthStr]?.[prop];
+    const width = theme[camelCase(widthProperty) as WidthProps]?.[prop];
     // @ts-expect-error ???
-    const height = theme[heightStr]?.[prop];
+    const height = theme[camelCase(heightProperty) as HeightProps]?.[prop];
 
     if (width != null && height != null) {
       return {
-        [widthStr]: width,
-        [heightStr]: height,
+        [widthProperty]: width,
+        [heightProperty]: height,
       };
     }
 
     const value = handler.bracket.cssvar.auto.fraction.rem(prop);
 
     return {
-      [widthStr]: value,
-      [heightStr]: value,
+      [widthProperty]: value,
+      [heightProperty]: value,
     };
   },
   {
