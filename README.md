@@ -3,7 +3,7 @@
 ## 安装
 
 ```bash
-  npm install unocss-preset-short -D
+npm install unocss-preset-short -D
 ```
 
 ## 使用
@@ -25,10 +25,10 @@ export default defineConfig({
 ```html
 <div class="size-auto" />
 <div class="size-full" />
-<div class="size-1/2" />
-<div class="size-xs" />
-<div class="size-1" />
-<div class="size-[1px]" />
+<div class="min-size-1/2" />
+<div class="min-size-xs" />
+<div class="max-size-1" />
+<div class="max-size-[1px]" />
 ```
 
 这将生成以下 css 代码
@@ -36,10 +36,10 @@ export default defineConfig({
 ```css
 .size-auto { width: auto; height: auto; }
 .size-full { width: 100%; height: 100%; }
-.size-1/2 { width: 50%; height: 50%; }
-.size-xs { width: 20rem; height: 20rem; }
-.size-1 { width: 0.25rem; height: 0.25rem; }
-.size-[1px] { width: 1px; height: 1px; }
+.min-size-1/2 { min-width: 50%; min-height: 50%; }
+.min-size-xs { min-width: 20rem; min-height: 20rem; }
+.max-size-1 { max-width: 0.25rem; max-height: 0.25rem; }
+.max-size-[1px] { max-width: 1px; max-height: 1px; }
 ```
 
 ## License
