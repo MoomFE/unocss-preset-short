@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [v0.1.0]
+ - 📅 2022-05-01
+ - 🌟 新增使用 `(min-|max-)?size-*` 的方式同时定义宽高
+
 <br>
 <hr>
 <br>
@@ -25,3 +29,9 @@ CHANGELOG 图标规范
 <br>
 <hr>
 <br>
+
+
+## [v3.12.0]
+
+[Unreleased]: https://github.com/it-moom/Tools/compare/v0.1.0...HEAD
+[v0.1.0]: https://github.com/MoomFE/Small-Utils/releases/tag/v0.1.0
