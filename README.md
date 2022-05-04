@@ -1,5 +1,7 @@
 # unocss-preset-short
 
+仓库已迁移至 [unocss-preset-extra](https://github.com/MoomFE/unocss-preset-extra)
+
 ## 安装
 
 ```bash
