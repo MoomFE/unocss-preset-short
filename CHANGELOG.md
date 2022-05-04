@@ -33,5 +33,5 @@ CHANGELOG 图标规范
 
 ## [v3.12.0]
 
-[Unreleased]: https://github.com/it-moom/Tools/compare/v0.1.0...HEAD
-[v0.1.0]: https://github.com/MoomFE/Small-Utils/releases/tag/v0.1.0
+[Unreleased]: https://github.com/MoomFE/unocss-preset-short/compare/v0.1.0...HEAD
+[v0.1.0]: https://github.com/MoomFE/unocss-preset-short/releases/tag/v0.1.0
